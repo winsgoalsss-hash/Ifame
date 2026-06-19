@@ -14,7 +14,7 @@
     }
 
     body {
-        background: linear-gradient(135deg, #1a0d0d, #000);
+        background: transparent !important; /*  เปลี่ยนเป็นพื้นหลังใส */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -205,7 +205,7 @@ function animateCounter(targetValue) {
 
 function updateOnlineCounter() {
     // สุ่มค่าที่จะเปลี่ยนแปลง
-    const randomChange = Math.floor(Math.random() * 15 - 9; // สุ่มค่าระหว่าง -15ถึง +9
+    const randomChange = Math.floor(Math.random() * 15) - 9; // สุ่มค่าระหว่าง -15ถึง +9
     let newTarget = currentUsers + randomChange;
 
     // ตรวจสอบไม่ให้ค่าเกินช่วงที่กำหนด
